@@ -10,6 +10,7 @@ NumberBlackBox.prototype.getNumber = function() {
 NumberBlackBox.prototype.add = function(delta) {
   if ( isNaN(delta) ) { return NaN };
   this.myNumber += delta;
+  this.myNumber = this.myNumber;
   return this.myNumber;
 };
 
